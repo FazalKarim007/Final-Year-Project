@@ -26,10 +26,7 @@ public class ConnectionProvider {
 //            String query = "INSERT INTO logIn VALUES (2121, 'kamran', 'KHAN', 22)";
 //String sql = "INSERT INTO logIn (`id`, `first`, `last`, `age`) VALUES ('4', 'asif', 'khan', '45');";
             java.sql.Connection connection = DriverManager.getConnection(url, user, password);
-//            Statement st = connection.createStatement();
-//           PreparedStatement ps =connection.prepareStatement(sql);
-//            ps.execute();
-//            st.executeQuery(sql);
+
             if (connection != null) {
                 System.out.println("connected sucessfully..." + connection.getCatalog());
             } else {
